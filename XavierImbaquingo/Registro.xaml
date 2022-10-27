@@ -1,0 +1,31 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="XavierImbaquingo.Registro">
+    <ContentPage.Content>
+        <StackLayout>
+            <Label x:Name="lblUsuario" Text="." HorizontalTextAlignment="End" FontSize="20"/>
+
+            <Frame BackgroundColor="#2196F3" Padding="18" CornerRadius="0">
+                <Label Text="Registro" HorizontalTextAlignment="Center" TextColor="White" FontSize="24"/>
+            </Frame>
+           
+            
+            <Label Text="MontoInicial"/>
+            <Entry x:Name="txtMontoInicial" Keyboard="Numeric"/>
+
+            <Label Text="PagoMensual"/>
+            <Entry x:Name="txtPagoMensual" Keyboard="Numeric"/>
+
+            <Label Text=" CuotaMensual"/>
+            <Entry x:Name="txtCuotaMensual"/>
+        
+            
+            
+            <Button x:Name="btnCalcular" Text="Calcular" Clicked="btnCalcular_Clicked"/>
+
+
+        
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>
